@@ -1,7 +1,8 @@
 -- -------------------
 -- Jared Heeringa
 -- CSC4500
--- Table/Schema creation commands for SQL
+-- Assignment #4: Table & Schema creation commands for SQL
+-- FlipGrid Link: https://flipgrid.com/s/VeMPdxpb4YEB
 -- -------------------
 
 
@@ -9,7 +10,7 @@
 -- create csc4500 schema
 -- -------------------
 CREATE SCHEMA IF NOT EXISTS `csc4500` DEFAULT CHARACTER SET utf8 ;
-USE `csc4500` ;
+USE `csc4500`;
 
 
 -- -------------------
