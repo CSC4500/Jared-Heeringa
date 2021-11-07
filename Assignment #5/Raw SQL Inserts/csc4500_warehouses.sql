@@ -1,0 +1,4 @@
+INSERT INTO csc4500.warehouses (WarehouseID, W_WarehouseName, W_Address1, W_Address2, W_City, W_State, W_PostalCode, W_Country) VALUES (1, 'Main HQ', '123 Main St', 'BLDG 1', 'Batavia', 'Illinois', '60510', 'US');
+INSERT INTO csc4500.warehouses (WarehouseID, W_WarehouseName, W_Address1, W_Address2, W_City, W_State, W_PostalCode, W_Country) VALUES (2, 'Secondary Storage', '456 W Street St.', 'BLDG 999', 'Chicago', 'Illinois', '60601', 'US');
+INSERT INTO csc4500.warehouses (WarehouseID, W_WarehouseName, W_Address1, W_Address2, W_City, W_State, W_PostalCode, W_Country) VALUES (3, 'Temporary (CA)', '666 N West St', null, 'Los Angeles', 'California', '90001', 'US');
+INSERT INTO csc4500.warehouses (WarehouseID, W_WarehouseName, W_Address1, W_Address2, W_City, W_State, W_PostalCode, W_Country) VALUES (4, 'Supplier (China)', '2348 Prince St', 'FLR 4', 'Beijing', 'Dongcheng District', '100010', 'CN');

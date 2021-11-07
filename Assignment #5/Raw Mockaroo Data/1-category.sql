@@ -1,0 +1,13 @@
+insert into category (CategoryID, Cat_Name, Cat_Desc) values (1, 'NFL', null);
+insert into category (CategoryID, Cat_Name, Cat_Desc) values (2, 'MLB', null);
+insert into category (CategoryID, Cat_Name, Cat_Desc) values (3, 'NBA', null);
+insert into category (CategoryID, Cat_Name, Cat_Desc) values (4, 'NHL', null);
+insert into category (CategoryID, Cat_Name, Cat_Desc) values (5, 'NCAA', null);
+insert into category (CategoryID, Cat_Name, Cat_Desc) values (6, 'MISC', null);
+insert into category (CategoryID, Cat_Name, Cat_Desc) values (7, 'OTHER', null);
+insert into category (CategoryID, Cat_Name, Cat_Desc) values (8, 'MARVEL', null);
+insert into category (CategoryID, Cat_Name, Cat_Desc) values (9, 'DC', null);
+insert into category (CategoryID, Cat_Name, Cat_Desc) values (10, 'DISNEY', null);
+insert into category (CategoryID, Cat_Name, Cat_Desc) values (11, 'UFC', null);
+insert into category (CategoryID, Cat_Name, Cat_Desc) values (12, 'NASCAR', null);
+insert into category (CategoryID, Cat_Name, Cat_Desc) values (13, 'GENERIC', null);

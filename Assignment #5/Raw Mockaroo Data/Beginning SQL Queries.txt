@@ -1,0 +1,48 @@
+select o.OrderID, u.U_username, u.U_emailAddress, o.O_DatePlaced
+from orders as o
+inner join users u on o.FK_UserID = u.userID
+where u.isDeleted <> 1;
+
+-- Select from order details
+-- only user #1 and order #8
+select OrderID, U_username, U_emailAddress, P_Code, P_Name, Cat_Name, SubCat_Name, OrderedQty
+from orders
+inner join users u on orders.FK_UserID = u.userID
+inner join order_details od on orders.OrderID = od.FK_OrderID
+inner join products p on od.FK_ProductID = p.ProductID
+inner join category c on p.FK_CategoryID = c.CategoryID
+inner join sub_category sc on p.FK_SubCategoryID = sc.SubCategoryID
+where FK_UserID = 1 AND  OrderID = 8;
+
+-- test (returns 2 orders and order details)
+select OrderID, U_username, U_emailAddress, P_Code, P_Name, Cat_Name, SubCat_Name, OrderedQty
+from orders
+inner join users u on orders.FK_UserID = u.userID
+inner join order_details od on orders.OrderID = od.FK_OrderID
+inner join products p on od.FK_ProductID = p.ProductID
+inner join category c on p.FK_CategoryID = c.CategoryID
+inner join sub_category sc on p.FK_SubCategoryID = sc.SubCategoryID
+where FK_UserID = 3;
+
+-- find user id of user with name jtookey2
+select userID
+from users
+where U_username LIKE '%jtookey2%';
+
+
+-- select products (add in cat, sub-cat, mfg, warehouse, & user)
+select ProductID, P_Code, P_Name, P_Desc1, Cat_Name, SubCat_Name, MFG_Name, W_WarehouseName, U_username
+from products
+inner join category c on products.FK_CategoryID = c.CategoryID
+inner join sub_category sc on products.FK_SubCategoryID = sc.SubCategoryID
+inner join manufacturers m on products.FK_ManufacturerID = m.ManufacturerID
+inner join warehouses w on products.FK_WarehouseID = w.WarehouseID
+inner join users u on products.FK_CreatedBy = u.userID;
+
+
+-- users joined with address and their user role
+select *
+from users
+inner join addresses a on users.userID = a.FK_UserID
+inner join user_roles ur on users.FK_RoleID = ur.RoleID
+where isDeleted <> 1;
