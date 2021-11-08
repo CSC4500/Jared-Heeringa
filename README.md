@@ -11,7 +11,7 @@ This repo will contain all homework assignments as well as any/all project updat
 - Assignment #2 (09/11/2021)
 - Assignment #3 (10/09/2021)
 - Assignment #4 (10/30/2021)
-- Assignment #5 (TBD)
+- Assignment #5 (11/07/2021)
 - Assignment #6 (TBD)
 - Assignment #7 (TBD)
 
