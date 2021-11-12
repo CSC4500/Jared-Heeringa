@@ -5,6 +5,7 @@
 -- -------------------
 -- create csc4500 schema
 -- -------------------
+DROP SCHEMA IF EXISTS `csc4500`;
 CREATE SCHEMA IF NOT EXISTS `csc4500` DEFAULT CHARACTER SET utf8 ;
 USE `csc4500`;
 
