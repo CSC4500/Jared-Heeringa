@@ -1,0 +1,42 @@
+doctype html
+html
+    head
+        title #{PageTitle}
+        // bulma css
+        link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css')
+        link(rel='stylesheet', href='https://cdn.datatables.net/1.11.3/css/dataTables.bulma.min.css')
+
+        script(src='https://code.jquery.com/jquery-3.5.1.slim.js', integrity='sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=', crossorigin='anonymous')
+        script(type='text/javascript', charset='utf8', src='https://cdn.datatables.net/1.10.23/js/jquery.dataTables.js')
+        script(type='text/javascript', charset='utf8', src='https://cdn.datatables.net/1.10.23/js/dataTables.bulma.min.js')
+    body
+        section.section
+            .container
+                h1.title Product List
+                p.subtitle See the blow for a list of products
+
+                table.table.is-striped.is-hoverable.is-fullwidth#productsTable
+                    thead
+                        tr
+                            th ProductID
+                            th P_Name
+                            th Cat_Name
+                            th SubCat_Name
+                            th MFG_Name
+                            th W_WarehouseName
+                            th U_username
+                    tbody
+                        each product in products
+                            tr
+                                td #{product.ProductID}
+                                td #{product.P_Name}
+                                td #{product.Cat_Name}
+                                td #{product.SubCat_Name}
+                                td #{product.MFG_Name}
+                                td #{product.W_WarehouseName}
+                                td #{product.U_username}
+
+script.
+    $(document).ready(function () {
+        $('#productsTable').DataTable();
+    });
