@@ -2,7 +2,7 @@
 
 CSC4500 Database Work
 
-This repo will contain all homework assignments as well as any/all project updates.
+This repo will contain all homework assignments as well as any/all project updates
 
 
 # Homework Assignments
@@ -13,7 +13,7 @@ This repo will contain all homework assignments as well as any/all project updat
 - Assignment #4 (10/30/2021)
 - Assignment #5 (11/07/2021)
 - Assignment #6 (11/14/2021)
-- Assignment #7 (TBD)
+- Assignment #7 (11/28/2021)
 
 
 <!-- Copy Banner -->
