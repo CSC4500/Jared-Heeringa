@@ -32,13 +32,13 @@ Connect your database to a web application. You can use ROR, PHP, Flask, NodeJS,
 
 5. Not now have a connection object that we can connect to
 	```js
-		//Connect to the database
-		connection.connect(function (err, result) {
-			if (err) {
-				console.log(err)
-			} else {
-        console.log('Connected');
-    		}
+	//Connect to the database
+	connection.connect(function (err, result) {
+		if (err) {
+			console.log(err);
+		} else {
+        		console.log('Connected');
+        	}
     });
     ```
 
