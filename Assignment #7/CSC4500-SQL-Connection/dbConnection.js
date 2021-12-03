@@ -87,6 +87,6 @@ app.get('/', function (req, res) {
 
 
 // Start the server
-app.listen(80, function () {
+app.listen(8080, function () {
     console.log('Listening on port 8080');
 });
